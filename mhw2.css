@@ -1,0 +1,359 @@
+body {
+    margin: 0px;
+    border: 3px solid darkgrey;
+}
+
+/* Header */
+
+header {
+    background-image: url(Immagini/ristoranti.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid darkgrey;
+    position: relative;
+}
+
+#overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    background-color: rgb(220, 220, 220);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+    width: 95%;
+    left: 2%;
+    right: 2%;
+    border: 3px solid darkgrey;
+    position: fixed;
+    z-index: 100;
+}
+
+nav a {
+    color: rgb(100, 100, 100);
+    font-size: calc(8px + 1vw);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+nav a:active {
+    color: white;
+}
+
+#menu {
+    display: none;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(220, 220, 220, 0.2);
+}
+
+#menu div {
+    height: 3px;
+    width: 30px;
+    margin: 3px 0px;
+    background-color: white;
+}
+
+#id_1 {
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+#id_1 strong {
+    font-size: calc(30px + 5vw);
+    font-family: 'Dela Gothic One', cursive;
+    color: red;
+}
+
+#id_2 {
+    margin-top: calc(160px + 5vw);
+    margin-left: 10px;
+}
+
+#id_2 strong {
+    font-size: calc(10px + 5vw);
+    border-radius: 10px;
+    background-color: rgba(149, 95, 32, 0.6);
+    color: white;
+}
+
+/* Section */
+
+section {
+    background-color: wheat;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
+
+#preferences {
+    flex-direction: column;
+    align-items: center;
+    border: 2px groove darkgrey;
+    width: 80%;
+    margin-bottom: 1%;
+    background-color: rgb(247, 191, 88);
+}
+
+.pref {
+    display: flex;
+}
+
+#title_preferences {
+    font-size: calc(30px + 3vw);
+    margin: 10px;
+    text-decoration: underline;
+    text-align: center;
+    font-family: 'Arbutus', cursive;
+}
+
+#choices {
+    width: 90%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.choice {
+    width: 23%;
+    height: 250px;
+    margin: 0.5% 0.5%;
+    border: 2px groove darkgrey;
+    background-color: white;
+}
+
+.title_choice {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 30%;
+    width: 100%;
+    border-bottom: 1px groove darkgrey;
+}
+
+.title_choice h1 {
+    margin: 0px;
+    width: 65%;
+    text-align: center;
+    font-size: calc(8px + 1vw);
+    font-family: 'Space Mono', monospace;
+    margin-left: 1%;
+}
+
+.title_choice img {
+    width: 23%;
+    background-color: white;
+    margin-right: 1%;
+    border: 2px solid white;
+}
+
+.title_choice img:hover {
+    cursor: pointer;
+    border-radius: 20px;
+    border-color: black;
+}
+
+.image_choice {
+    height: 70%;
+    width: 100%;
+}
+
+#title_blocks {
+    font-size: calc(30px + 3vw);
+    margin: 0px 3% 0px 3%;
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'Arbutus', cursive;
+}
+
+#input_block {
+    text-align: right;
+    width: 80%;
+    margin: 1% 0%;
+}
+
+#input_block span{
+    font-size: 20px;
+    color: black;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px groove darkgrey;
+    width: 80%;
+    margin: 0.5% 0%;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(247, 191, 88);
+    z-index: 1;
+}    
+
+.name {
+    width: 82%;
+    height: 100%;
+    font-size: calc(20px + 1vw);
+    font-family: 'Cherry Swash', cursive;
+    margin: 0.5% 0% 0% 1%;
+}
+
+.info, .preference {
+    height: 100%;
+    border: 1px solid grey;
+}
+
+.info {
+    width: calc(65px + 3vw);
+}
+
+.preference {
+    width: calc(50px + 3vw);
+}
+
+.info:hover, .preference:hover {
+    cursor: pointer;
+    border-color: rgb(180, 20, 20);
+    border-top: 2.5px solid rgb(180, 20, 20);
+    border-bottom: 2.5px solid rgb(180, 20, 20);
+}
+
+.content {
+    display: flex;
+    width: 100%;
+    height: 250px;
+    border-top: 2px groove darkgrey;
+}
+
+.text, .content img {
+    width: 50%;
+    height: 100%;
+    background-color: rgb(216, 164, 31, 0.3);
+}
+
+.text {
+    border-right: 2px groove darkgrey;
+}
+
+.text div {
+    margin: 2% 2%;
+    color: black;
+    font-family: 'Port Lligat Sans', sans-serif;
+    font-size: calc(13px + 1vw);
+    font-style: oblique;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Footer */
+
+footer {
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 250px;
+    border-top: 3px solid darkgrey;
+}
+
+footer div {
+    text-align: center;
+    padding: 20px 20px;
+    border: 2px solid darkgrey;
+    font-family: 'Economica', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+footer div em {
+    font-size: 30px;
+    font-weight: normal;
+}
+
+/* Media Query */
+
+@media (max-width: 850px) {
+    .choice {
+        width: 30%;
+    }
+}
+
+@media (max-width: 700px) {
+    /* Header */
+    #menu {
+        display: flex;
+    }
+    nav {
+        display: none;
+    }
+    #id_1 {
+        margin-top: 0px;
+    }
+    #id_1 strong {
+        font-size: 65px;
+    }
+    #id_2 strong {
+        font-size: 55px;
+    }
+    /* Section */
+    #title_preferences {
+        font-size: 45px;
+    }
+    #title_blocks {
+        margin-top: 2%;
+        font-size: 45px;
+    }
+    #input_block {
+        text-align: center;
+        margin: 2% 0%;
+    }
+    .name {
+        font-size: 25px;
+        margin: 3% 0% 0% 1%;
+    }
+    .content {
+        height: 180px;
+    }
+    .text div {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 650px) {
+    .choice {
+        width: 45%;
+    }
+    .title_choice h1 {
+        font-size: 15px;
+    }
+    
+}
